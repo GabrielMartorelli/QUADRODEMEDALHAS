@@ -1,0 +1,122 @@
+/* Geral */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  outline: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.linha {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+/* Header */
+
+header img {
+  width: 100%;
+  max-width: 150px;
+  margin: 10px 5px;
+}
+
+header h1 {
+  color: #000;
+  margin-left: 30px;
+}
+
+/* Main */
+
+main {
+  background-color: #f7f7f7;
+  height: 100vh;
+  padding-top: 80px;
+}
+
+main article {
+  box-shadow: 0 0 14px -9px #000;
+}
+
+main article section {
+  height: 608px;
+  overflow-y: scroll;
+}
+
+main article .linha .coluna {
+  padding: 0 15px;
+}
+
+main article header {
+  padding: 15px 0;
+}
+
+main article header .linha .coluna span {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+main article header .linha .coluna-medalha span {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  text-align: center;
+  line-height: 48px;
+  border-radius: 100%;
+  border: 2px solid #fff;
+}
+
+main article header .linha .coluna-medalha:nth-child(3) span {
+  background-color: #f7cc48;
+}
+main article header .linha .coluna-medalha:nth-child(4) span {
+  background-color: #d8d6d6;
+}
+main article header .linha .coluna-medalha:nth-child(5) span {
+  background-color: #b7955e;
+}
+
+main article header .coluna-country {
+  flex-grow: 2;
+}
+
+main article section .linha {
+  padding: 15px 0;
+}
+
+main article section .linha:nth-child(2n + 1) {
+  background-color: #e6e6e6;
+}
+
+main article section .linha .coluna-country {
+  flex-grow: 2;
+}
+
+main article section .linha .coluna span {
+  font-size: 22px;
+}
+main article section .linha .coluna-country span {
+  vertical-align: top;
+}
+
+.medal_gold,
+.medal_silver,
+.medal_bronze {
+  flex-basis: 77px;
+}
+
+main article section .linha .total {
+  flex-basis: 65px;
+}
+
+main article section .linha .coluna-rank {
+  flex-basis: 95px;
+}
